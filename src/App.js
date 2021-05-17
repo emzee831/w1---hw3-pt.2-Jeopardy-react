@@ -35,7 +35,7 @@ class componentFetch extends Component {
 
     
     render() {
-      const buttonText = this.state.visible ? "hide answer" : "show answer";
+      const buttonText = this.state.visible ? "press here to hide answer for next question" : "show answer";
         return (
         <div className="Main-App">
           <h1>Welcome to Jeopardy!</h1>
@@ -54,7 +54,7 @@ class componentFetch extends Component {
               <h3>Question Value: {this.state.value.value}</h3>
             </div>
             <div className="answer">
-            <h2> Answer: {this.state.visible ? this.state.answer.answer : null}</h2>
+            <h2 className="h2ans"> Answer: {this.state.visible ? this.state.answer.answer : null}</h2>
                <button id="ans-btn" onClick={() => {
                  this.setState({visible: !this.state.visible});
                }}>{buttonText}</button>  
