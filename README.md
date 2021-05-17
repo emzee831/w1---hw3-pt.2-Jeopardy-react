@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+Jeopardy game using the jservie api in React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

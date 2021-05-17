@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body {
+    border: 1px black;
+    padding: 2px;
+    padding-top: 20px;
+    background: rgb(230,217,217);
+    background: radial-gradient(circle, rgba(230,217,217,1) 9%, rgba(204,201,219,1) 59%, rgba(101,115,171,1) 81%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main-App {
+    background: rgb(230,217,217);
+    background: linear-gradient(0deg, rgba(230,217,217,1) 9%, rgba(204,201,219,1) 35%, rgba(174,183,221,1) 81%);   
+    display: flow-root;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    font-family: monospace;
+    width: 1420px;
+    height: 780px;
+    border: 5px black;
+    border-style: outset;
+    right: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    text-align: center;
+    font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.score, h3 {
+    text-align: center;
+    font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+#dec-btn {
+    color: rgb(35, 30, 30);
+    background-color: red;
+    font: bold;
+}
+#inc-btn {
+    color: rgb(21, 23, 21);
+    background-color: green;
+    font: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#reset-btn {
+    color: rgb(21, 23, 21);
+    background-color: rgb(255, 255, 255);
+    font: bold;
+}
+
+#dec-btn, #inc-btn, #reset-btn {
+    font-size: 20px;
+}
+
+.questionbutton {
+    text-align: center;
+}
+
+.getquestion {
+    color: rgb(35, 30, 30);
+    background-color: rgb(242, 255, 0);
+    font: bold;
+    font-size: 20px;
+}
+
+.answer {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#ans-btn {
+    size: 50px;
+    width: 200px;
+    background-color: #1c0080; 
+    border: none;
+    color: rgb(254, 254, 254);  
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 }
