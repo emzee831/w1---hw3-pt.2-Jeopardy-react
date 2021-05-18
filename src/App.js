@@ -31,11 +31,12 @@ class componentFetch extends Component {
         this.setState({answer: data[0]});
         this.setState({value: data[0]});
       })
+      this.state.visible = false
     }
 
     
     render() {
-      const buttonText = this.state.visible ? "press here to hide answer for next question" : "show answer";
+      const buttonText = this.state.visible ? "hide answer" : "show answer";
         return (
         <div className="Main-App">
           <h1>Welcome to Jeopardy!</h1>
